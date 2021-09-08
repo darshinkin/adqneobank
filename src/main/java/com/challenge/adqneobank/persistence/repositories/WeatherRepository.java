@@ -1,4 +1,4 @@
-package com.challenge.adqneobank.persistence;
+package com.challenge.adqneobank.persistence.repositories;
 
 import org.springframework.data.repository.CrudRepository;
 
