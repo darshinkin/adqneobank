@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: cart
+  datasource:
+    url: ${DB_URI:jdbc:sqlite:memory:weather?cache=shared}
+#    url: ${DB_URI:jdbc:h2:mem:db;DB_CLOSE_DELAY=-1}
+    driverClassName: ${DB_DRIVER:org.sqlite.JDBC}
+#    driverClassName: ${DB_DRIVER:org.h2.Driver}
+    username: ${DB_USERNAME:sa}
+    password: ${DB_PASSWORD:sa}
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: ${DB_DIALECT:com.challenge.adqneobank.persistence.sqlite.SQLiteDialect}
+#        dialect: ${DB_DIALECT:org.hibernate.dialect.H2Dialect}
