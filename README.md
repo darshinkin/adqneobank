@@ -1,0 +1,1 @@
+# Technical Skills Assessment Project in ADQ Neobank
